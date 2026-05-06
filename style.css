@@ -112,3 +112,91 @@ body{
     text-align: right;
     padding-top: 10%;
 }
+
+.habilidades{
+    display: flex;
+}
+
+#skills{
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#blandas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#blandas h1{
+    text-align: center;
+}
+
+#repositorios{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    color: white;
+    gap: 50px;
+}
+
+
+#repos a{
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    font-weight: bold;
+}
+
+#repos a:hover{
+    text-decoration: none;
+    color: inherit;
+    color: #1e4b2b;
+    font-weight: bold;
+}
+
+#repos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 80%;
+    gap: 15px;
+  }
+
+.fondoTexto{
+    border-radius: 25px 25px 0 0;
+    background-color: #47d16e ;
+    padding: 10px;
+}
+
+.repo1{
+    border-radius: 30px;
+    background-image: url("dqoriente.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+  
+.repo2{
+    border-radius: 30px;
+    background-image: url("arquitectura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+.repo3{
+    border-radius: 30px;
+    background-image: url("Netflix.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 2;
+  } 
