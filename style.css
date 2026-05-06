@@ -1,0 +1,114 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background-color: #171719;
+}
+
+.contactame{
+    border-radius: 10px;
+    background-color: #47d16e;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171719;
+    color: white;
+    padding: 0 10%;
+}
+
+.sobre_mi{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    gap: 15%;
+}
+
+.sobre_mi div{
+    cursor: pointer;
+}
+
+.logo {
+    width: 70px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.fondoLogo {
+    background-image: url("fondo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10% 0;
+}
+
+.fondoLogo img {
+    width: 20%;
+    height: auto;
+}
+
+#miInfo{
+    padding: 0 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotoPerfil{
+    width: 50%;
+    border-radius: 100%;
+    margin-top: -25%;
+}
+
+.fotoPerfil img{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#infoContacto div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+#infoContacto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.linkedin{
+    width: 45%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contacto{
+    color: #47d16e;
+    font-weight: bolder;
+}
+.nombre{
+    color: #47d16e;
+}
+
+#miDescripcion{
+    text-align: right;
+    padding-top: 10%;
+}
