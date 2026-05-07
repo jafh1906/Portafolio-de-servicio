@@ -98,6 +98,10 @@ body{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    font-weight: bold;
 }
 
 .contacto{
@@ -134,6 +138,16 @@ body{
     text-align: center;
 }
 
+.habilidades ul{
+    list-style: none;
+}
+
+.habilidades li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #repositorios{
     justify-content: center;
     display: flex;
@@ -157,6 +171,7 @@ body{
     color: inherit;
     color: #1e4b2b;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #repos{
@@ -166,37 +181,145 @@ body{
     gap: 15px;
   }
 
-.fondoTexto{
-    border-radius: 25px 25px 0 0;
-    background-color: #47d16e ;
-    padding: 10px;
-}
-
 .repo1{
     border-radius: 30px;
-    background-image: url("dqoriente.jpeg");
+    background-image: url("fondoV1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 50px;
+    padding-top: 20px;
     grid-column: span 1;
     grid-row: span 2;
 }
   
 .repo2{
     border-radius: 30px;
-    background-image: url("arquitectura.jpg");
+    background-image: url("fondoV2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 50px;
+    padding-top: 20px;
     grid-column: span 1;
     grid-row: span 1;
   }
   
 .repo3{
+    cursor: pointer;
     border-radius: 30px;
-    background-image: url("Netflix.jpeg");
+    background-image: url("fondov3.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 50px;
+    padding-top: 20px;
     grid-column: 2;
   } 
+
+.repo3:hover{
+	-webkit-animation: srepo3 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: repo3 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes repo3{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes repo3{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+
+  .repo2:hover{
+	-webkit-animation: repo2 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: repo2 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes repo2{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes repo2{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+
+  .repo1:hover{
+	-webkit-animation: repo1 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: repo1 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes repo1{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes repo1{
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(12px);
+              transform: translateZ(50px) translateY(12px);
+      -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
